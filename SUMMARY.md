@@ -1,4 +1,14 @@
 # Summary
 
 * [Introduction](README.md)
-
+* [The Importance of (Test) Automation](importance-of-automation.md)
+* [Tools and Libraries We'll Look At](tools-and-libraries.md)
+* [The Sample Application](sample-application.md)
+* [Unit Tests](unit-tests.md)
+    * [What's a Unit?](unit-tests.md#whats-a-unit)
+    * [Sociable and Solitary](unit-tests.md#sociable-and-solitary)
+    * [Mocking and Stubbing](unit-tests.md#mocking-and-stubbing)
+    * [What to Test?](unit-tests.md#what-to-test)
+    * [Testing Private Methods](unit-tests.md#but-i-really-need-to-test-this-private-method)
+    * [An Example (Java)](unit-tests.md#an-example-java)
+    * [Unit Testing is Not Enough](unit-tests.md#unit-testing-is-not-enough)
