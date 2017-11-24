@@ -18,7 +18,7 @@
     * [Provider Test](provider-test.md)
 * [End-to-End Tests](end-to-end-tests.md)
     * [Testing via the Web Interface](ui-e2e-test.md)
-    * [Testing via the RESt API](rest-api-e2e-test.md)
+    * [Testing via the REST API](rest-api-e2e-test.md)
 * [Acceptance Tests](acceptance-tests.md)
 * [Exploratory Testing](exploratory-testing.md)
 * [Avoid Test Duplication](avoid-test-duplication.md)

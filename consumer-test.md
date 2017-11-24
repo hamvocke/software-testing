@@ -1,4 +1,4 @@
-## Consumer Test (our team)
+# Consumer Test (our team)
 Our microservice consumes the weather API. So it's our responsibility to write a **consumer test** that defines our expectations for the contract (the API) between our microservice and the weather service.
 
 First we include a library for writing pact consumer tests in our `build.gradle`:
