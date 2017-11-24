@@ -12,3 +12,8 @@
     * [Testing Private Methods](unit-tests.md#but-i-really-need-to-test-this-private-method)
     * [An Example (Java)](unit-tests.md#an-example-java)
     * [Unit Testing is Not Enough](unit-tests.md#unit-testing-is-not-enough)
+* [Integration Tests](integration-tests.md)
+    * [Database Integration](integration-tests.md#database-integration-java)
+    * [REST API Integration](integration-tests.md#rest-api-integration-java)
+    * [Integration With Third-Party Services](integration-tests.md#integration-with-third-party-services-java)
+    * [Parsing and Writing JSON](integration-tests.md#parsing-and-writing-json)
