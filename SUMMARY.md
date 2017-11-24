@@ -17,3 +17,4 @@
     * [REST API Integration](integration-tests.md#rest-api-integration-java)
     * [Integration With Third-Party Services](integration-tests.md#integration-with-third-party-services-java)
     * [Parsing and Writing JSON](integration-tests.md#parsing-and-writing-json)
+* [UI Tests](ui-tests.md)
