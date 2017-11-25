@@ -1,0 +1,587 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Testing via the REST API · Effective Software Testing</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Ham Vocke">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="acceptance-tests.html" />
+    
+    
+    <link rel="prev" href="ui-e2e-test.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Effective Software Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="importance-of-automation.html">
+            
+                <a href="importance-of-automation.html">
+            
+                    
+                    The Importance of (Test) Automation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="tools-and-libraries.html">
+            
+                <a href="tools-and-libraries.html">
+            
+                    
+                    Tools and Libraries We'll Look At
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="sample-application.html">
+            
+                <a href="sample-application.html">
+            
+                    
+                    The Sample Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="unit-tests.html">
+            
+                <a href="unit-tests.html">
+            
+                    
+                    Unit Tests
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="test-structure.html">
+            
+                <a href="test-structure.html">
+            
+                    
+                    Test Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="unit-test-example.html">
+            
+                <a href="unit-test-example.html">
+            
+                    
+                    Implementing a Unit Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="integration-tests.html">
+            
+                <a href="integration-tests.html">
+            
+                    
+                    Integration Tests
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="database-integration-tests.html">
+            
+                <a href="database-integration-tests.html">
+            
+                    
+                    Database Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="rest-api-integration-tests.html">
+            
+                <a href="rest-api-integration-tests.html">
+            
+                    
+                    REST API Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="third-party-integration-tests.html">
+            
+                <a href="third-party-integration-tests.html">
+            
+                    
+                    Integration With Third-Party Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="json-parsing-integration-tests.html">
+            
+                <a href="json-parsing-integration-tests.html">
+            
+                    
+                    Parsing and Writing JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ui-tests.html">
+            
+                <a href="ui-tests.html">
+            
+                    
+                    UI Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="contract-tests.html">
+            
+                <a href="contract-tests.html">
+            
+                    
+                    Contract Tests
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="consumer-test.html">
+            
+                <a href="consumer-test.html">
+            
+                    
+                    Consumer Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="provider-test.html">
+            
+                <a href="provider-test.html">
+            
+                    
+                    Provider Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="end-to-end-tests.html">
+            
+                <a href="end-to-end-tests.html">
+            
+                    
+                    End-to-End Tests
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="ui-e2e-test.html">
+            
+                <a href="ui-e2e-test.html">
+            
+                    
+                    Testing via the Web Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.2" data-path="rest-api-e2e-test.html">
+            
+                <a href="rest-api-e2e-test.html">
+            
+                    
+                    Testing via the REST API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="acceptance-tests.html">
+            
+                <a href="acceptance-tests.html">
+            
+                    
+                    Acceptance Tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="exploratory-testing.html">
+            
+                <a href="exploratory-testing.html">
+            
+                    
+                    Exploratory Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="avoid-test-duplication.html">
+            
+                <a href="avoid-test-duplication.html">
+            
+                    
+                    Avoid Test Duplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="conclusion.html">
+            
+                <a href="conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="further-reading.html">
+            
+                <a href="further-reading.html">
+            
+                    
+                    Further Reading
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Testing via the REST API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rest-api-end-to-end-test">REST API End-to-End Test</h1>
+<p>I know, we already have tests in place that fire some sort of request against our REST API and check that the results are correct. Still, none of them is truly end to end. The MockMVC tests are &quot;only&quot; integration tests and don&apos;t send real HTTP requests against a fully running service.</p>
+<p>Let me show you one last tool that can come in handy when you write a service that provides a REST API. <a href="https://github.com/rest-assured/rest-assured" target="_blank">REST-assured</a> is a library that gives you a nice DSL for firing real HTTP requests against an API and checks the responses. It looks similar to MockMVC but is truly end-to-end (fun fact: there&apos;s even a REST-Assured MockMVC dialect). If you think Selenium is overkill for your application as you don&apos;t really have a user interface that needs testing, REST-Assured is the way to go.</p>
+<p>First things first: Add the dependency to your <code>build.gradle</code>.</p>
+<pre><code>testCompile(&apos;io.rest-assured:rest-assured:3.0.3&apos;)
+</code></pre><p>With this library at our hands we can implement a end-to-end test for our REST API:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RunWith</span>(SpringRunner.class)
+<span class="hljs-meta">@SpringBootTest</span>(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloE2ERestTest</span> </span>{
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> PersonRepository personRepository;
+
+    <span class="hljs-meta">@LocalServerPort</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> port;
+
+    <span class="hljs-meta">@After</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">tearDown</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        personRepository.deleteAll();
+    }
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">shouldReturnGreeting</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        Person peter = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">&quot;Peter&quot;</span>, <span class="hljs-string">&quot;Pan&quot;</span>);
+        personRepository.save(peter);
+
+        when()
+                .get(String.format(<span class="hljs-string">&quot;http://localhost:%s/hello/Pan&quot;</span>, port))
+        .then()
+                .statusCode(is(<span class="hljs-number">200</span>))
+                .body(containsString(<span class="hljs-string">&quot;Hello Peter Pan!&quot;</span>));
+    }
+}
+</code></pre>
+<p>Again, we start the entire Spring application using <code>@SpringBootTest</code>. In this case we <code>@Autowire</code> the <code>PersonRepository</code> so that we can write test data into our database easily. When we now ask the REST API to say &quot;hello&quot; to our friend &quot;Mr Pan&quot; we&apos;re being presented with a nice greeting. Amazing! And more than enough of an end-to-end test if you don&apos;t even sport a web interface.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ui-e2e-test.html" class="navigation navigation-prev " aria-label="Previous page: Testing via the Web Interface">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="acceptance-tests.html" class="navigation navigation-next " aria-label="Next page: Acceptance Tests">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Testing via the REST API","level":"1.9.2","depth":2,"next":{"title":"Acceptance Tests","level":"1.10","depth":1,"path":"acceptance-tests.md","ref":"acceptance-tests.md","articles":[]},"previous":{"title":"Testing via the Web Interface","level":"1.9.1","depth":2,"path":"ui-e2e-test.md","ref":"ui-e2e-test.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Ham Vocke","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Effective Software Testing","language":"en","gitbook":"*"},"file":{"path":"rest-api-e2e-test.md","mtime":"2017-11-25T11:11:16.577Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-25T11:59:56.755Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
