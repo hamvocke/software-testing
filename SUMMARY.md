@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Effective Software Testing](README.md)
 * [The Importance of (Test) Automation](importance-of-automation.md)
 * [Tools and Libraries We'll Look At](tools-and-libraries.md)
 * [The Sample Application](sample-application.md)
