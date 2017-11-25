@@ -1,4 +1,4 @@
-# Integration With Third-Party Services [Java]
+# Integration With Third-Party Services
 Our microservice talks to [darksky.net](https://darksky.net), a weather REST API. Of course we want to ensure that our service sends requests and parses the responses correctly.
 
 We want to avoid hitting the real _darksky_ servers when running automated tests. Quota limits of our free plan is only part of the reason. The real reason is _decoupling_. Our tests should run independently of whatever the lovely people at darksky.net are doing. Even when your machine can't access the _darksky_ servers (e.g. when you're coding on the airplane again instead of enjoying being crammed into a tiny airplane seat) or the darksky servers are down for some reason.

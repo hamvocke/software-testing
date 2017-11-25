@@ -1,4 +1,4 @@
-# Tools and Libraries We'll Look at [Java]
+# Tools and Libraries We'll Look at
 This post will demonstrate several tools and libraries that help us implement automated tests. The most important ones are:
 
   * [**JUnit**](http://junit.org) as our test runner
