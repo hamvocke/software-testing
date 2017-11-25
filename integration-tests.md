@@ -6,6 +6,7 @@ For your automated tests this means you don't just need to run your own applicat
 Integration tests live at the boundary of your service. Conceptually they're always about triggering an action that leads to integrating with the outside part (filesystem, database, etc). A database integration test would probably look like this:
 
 ![a database integration test](img/dbIntegrationTest.png)
+
 *A database integration test integrates your code with a real database*
 
     1. start a database
@@ -17,6 +18,7 @@ Integration tests live at the boundary of your service. Conceptually they're alw
 Another example, an integration test for your REST API could look like this:
 
 ![an HTTP integration test](img/httpIntegrationTest.png)
+
 *An HTTP integration test checks that real HTTP calls hit your code correctly*
 
     1. start your application

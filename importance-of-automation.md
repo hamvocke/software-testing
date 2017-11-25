@@ -6,6 +6,7 @@ If you want to keep pace you'll have to look into ways to deliver your software 
 Building, testing and deploying an ever-increasing amount of software manually soon becomes impossible -- unless you want to spend all your time with manual, repetitive work instead of delivering working software. Automating everything -- from build to tests, deployment and infrastructure -- is your only way forward.
 
 ![build pipeline](img/buildPipeline.png)
+
 *Use build pipelines to automatically and reliably get your software into production*
 
 Traditionally software testing was overly manual work done by deploying your application to a test environment and then performing some black-box style testing e.g. by clicking through your user interface to see if anything's broken.

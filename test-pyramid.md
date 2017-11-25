@@ -2,6 +2,7 @@
 If you want to get serious about automated tests for your software there is one key concept you should know about: the **test pyramid**. Mike Cohn came up with this concept in his book [Succeeding with Agile](https://www.amazon.com/dp/0321579364/ref=cm_sw_r_cp_dp_T2_bbyqzbMSHAG05). It's a great visual metaphor telling you to think about different layers of testing. It also tells you how much testing to do on each layer.
 
 ![Test Pyramid](img/testPyramid.png)
+
 _The test pyramid_
 
 Mike Cohn's original test pyramid consists of three layers that your test suite should consist of (bottom to top):

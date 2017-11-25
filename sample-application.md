@@ -16,6 +16,7 @@ The application's functionality is simple. It provides a REST interface with thr
 On a high-level the system has the following structure:
 
 ![sample application structure](img/testService.png)
+
 _the high level structure of our microservice system_
 
 Our microservice provides a REST interface that can be called via HTTP. For some endpoints the service will fetch information from a database. In other cases the service will call an external [weather API](https://darksky.net) via HTTP to fetch and display current weather conditions.
@@ -24,6 +25,7 @@ Our microservice provides a REST interface that can be called via HTTP. For some
 Internally, the Spring Service has a Spring-typical architecture:
 
 ![sample application architecture](img/testArchitecture.png)
+
 _the internal structure of our microservice_
 
 * `Controller` classes provide _REST_ endpoints and deal with _HTTP_ requests and responses
